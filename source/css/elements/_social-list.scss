@@ -1,0 +1,16 @@
+.social-list_footer {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: calc(50% - 0.7rem);
+	li {
+		display: inline-block;
+		padding: 0 10px;
+	}
+	i {
+		color: $color-white;
+		font-size: $font-regular;
+	}
+}
