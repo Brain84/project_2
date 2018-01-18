@@ -37,7 +37,7 @@
 		font-style: italic;
 		text-transform: uppercase;
 		font-weight: 100;
-		@include transform (rotate(-90deg));
+		transform: rotate(-90deg);
 		z-index: 1;
 		position: absolute;
 		top: 30%;
@@ -100,7 +100,7 @@
 			width: 0.3rem;
 			display: block;
 			background-color: $color-1;
-			@include transform (rotate(-90deg));
+			transform: rotate(-90deg);
 			float: right;
 			margin-top: 33px;
 		}
@@ -198,7 +198,7 @@
 			width: 0.3rem;
 			display: block;
 			background-color: $color-1;
-			@include transform (rotate(-90deg));
+			transform: rotate(-90deg);
 			float: right;
 			margin-top: 33px;
 		}
@@ -247,15 +247,11 @@
 		width: 15rem;
 		height: 15rem;
 		position: absolute;
-		@include border-radius(50%);
-		-webkit-box-shadow: 0px 1px 20px 3px rgba(204,204,204,1);
-		-moz-box-shadow: 0px 1px 20px 3px rgba(204,204,204,1);
+		border-radius: 50%;
 		box-shadow: 0px 1px 20px 3px rgba(204,204,204,1);
 		transition: all 0.2s ease-in-out;
 		&:hover {
-			-webkit-transform: scale(1.1);
-			-ms-transform: scale(1.1);
-			@include transform (scale(1.1));
+			transform: scale(1.1);
 		}
 	}
 	&:after {
@@ -276,7 +272,7 @@
 		height: 6rem;
 		top: 40%;
 		left: 32%;
-		@include transform (rotate(-90deg));
+		transform: rotate(-90deg);
 	}
 }
 .details_img3 {
@@ -288,7 +284,7 @@
 		height: 6rem;
 		top: 49%;
 		left: 34.5%;
-		@include transform (rotate(90deg));
+		transform: rotate(90deg);
 	}
 }
 .details_img4 {
@@ -300,7 +296,7 @@
 		height: 6rem;
 		top: 37%;
 		right: 34.5%;
-		@include transform (rotate(90deg));
+		transform: rotate(90deg);
 	}
 }
 .details_img5 {
@@ -312,7 +308,7 @@
 		height: 6rem;
 		top: 49%;
 		right: 34.5%;
-		@include transform (rotate(90deg));
+		transform: rotate(90deg);
 	}
 }
 .back {
@@ -345,7 +341,7 @@
 		height: 6rem;
 		top: 84%;
 		left: 34.5%;
-		@include transform (rotate(90deg));
+		transform: rotate(90deg);
 	}
 }
 .details_img8 {
@@ -357,14 +353,14 @@
 		height: 6rem;
 		top: 76%;
 		right: 34.5%;
-		@include transform (rotate(90deg));
+		transform: rotate(90deg);
 	}
 }
 .section--price {
 	height: 100vh;
 	background-image: url("../images/car13.png");
 	background-repeat: no-repeat;
-	@include background-size(cover);
+	background-size: cover;
 	position: relative;
 	h3 {
 		font-size: $font-title-section;
@@ -384,7 +380,7 @@
 			width: 0.3rem;
 			display: block;
 			background-color: $color-1;
-			@include transform (rotate(-90deg));
+			transform: rotate(-90deg);
 			float: right;
 			margin-top: 33px;
 		}
@@ -446,7 +442,7 @@
 			width: 0.3rem;
 			display: block;
 			background-color: $color-1;
-			@include transform (rotate(-90deg));
+			transform: rotate(-90deg);
 			float: right;
 			margin-top: 35px;
 		}

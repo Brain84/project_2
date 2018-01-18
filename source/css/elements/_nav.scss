@@ -7,7 +7,7 @@ nav {
 		margin: 0;
 		font-family: 'Lato', sans-serif;
 		background-image: linear-gradient(to top, #424445 40%, #fff 55%);
-		-webkit-background-clip: text;
+		background-clip: text;
 		-webkit-text-fill-color: transparent;
 		line-height: 6rem;
 		width: 14%;
@@ -20,7 +20,7 @@ nav {
 nav {
 	h2 {
 		color: #757778;
-		@include border-radius(10px);
+		border-radius: 10px;
 	}
 }
 .header-nav-list {
@@ -81,11 +81,9 @@ nav {
 			+ span {
 				background-color: transparent;
 				&:after {
-					-webkit-transform: rotate(45deg) translate(8px, 8px);
 					transform: rotate(45deg) translate(8px, 8px);
 				}
 				&:before {
-					-webkit-transform: rotate(-45deg) translate(0, 0);
 					transform: rotate(-45deg) translate(0, 0);
 				}
 			}
@@ -105,7 +103,6 @@ nav {
 			height: 2px;
 			background-color: $color-white;
 			bottom: 11px;
-			-webkit-transition: 0.3s;
 			transition: 0.3s;
 		}
 		&:after {

@@ -6,7 +6,7 @@ form {
 	left: calc(50% - 20rem);
 }
 .form-input {
-	@include input-placeholder {
+	input-placeholder {
 		color: $color-input-placeholder;
 	}
 	width: 47%;
@@ -39,7 +39,7 @@ form {
 	border: none;
 	border-bottom: 1px solid $color-black;
 	padding-left: 3px;
-	@include input-placeholder {
+	input-placeholder {
 		color: $color-input-placeholder;
 	}
 	&:focus {
@@ -51,7 +51,7 @@ form {
 	height: 5rem;
 	background-color: $color-1;
 	border: 1px solid $color-1;
-	@include border-radius(25px);
+	border-radius: 25px;
 	position: absolute;
 	cursor: pointer;
 	color: $color-white;

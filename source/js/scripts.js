@@ -1,31 +1,26 @@
+import jQuery from "jquery";
+window.$ = window.jQuery = jQuery;
+
 //scroll to a section
-$(function() {
-	$('a[href*="#"]:not([href="#"])').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+$('a[href*="#"]:not([href="#"])').click(function() {
+	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
-			var target = $(this.hash);
+		var target = $(this.hash);
 
-			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			if (target.length) {
-				$('html, body').animate({
-					scrollTop: target.offset().top
-				}, 1000);
-				return false;
-			}
+		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		if (target.length) {
+			$('html, body').animate({
+				scrollTop: target.offset().top
+			}, 1000);
+			return false;
 		}
-	});
+	}
 });
 
 //open nav list
-(function(){
-	'use strict';
-	$(function(){
-		$('.js-hamburger').on('click', function() {
-			$('.header-nav-list').toggleClass('is-open-menu');
-		});
-
-	});
-})();
+$('.js-hamburger').on('click', function() {
+	$('.header-nav-list').toggleClass('is-open-menu');
+});
 
 //translation of language
 var arrLang = {
@@ -91,13 +86,12 @@ var arrLang = {
 	}
 };
 
-$(function(){
-	$('.translate').click(function(){
-		var lang = $(this).attr('id');
+$('.translate').click(function(){
+	var lang = $(this).attr('id');
 
-	   $('.js-lang').each(function(index, element){
-		$(this).text(arrLang[lang][$(this).attr('key')]);
+		$('.js-lang').each(function(index, element){
+	$(this).text(arrLang[lang][$(this).attr('key')]);
 
-	   });
-	});
+		});
 });
+
